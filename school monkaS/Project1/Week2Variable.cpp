@@ -14,6 +14,6 @@ using namespace std;
 	float pocketMoney=727.72; //real number/floating point number
 	double balance=1000.0000; //real number - wider range than float 
 	bool isStudent=1; // yes/no (1 = true) (0 = false) anything in bool that is not 0 means true/1
-	cout<<"Are you a student?" << isStudent; 
+	cout<<"\nAre you a student?" << isStudent; 
 	return 0;
   }
