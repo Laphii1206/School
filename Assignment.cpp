@@ -11,9 +11,9 @@ double getDiscount(double totalItem) {
 }
 
 double getShippingFees(double totalWeight) {
-	if (totalWeight >= 1) return 10;
-	if (totalWeight >= 1.1) return 6.5;
 	if (totalWeight >= 10.1) return 6.2;
+	if (totalWeight >= 1.1) return 6.5;
+	if (totalWeight >= 1) return 10;
 	return 0;
 }
 
@@ -29,29 +29,28 @@ int main() {
 	cin >> totalWeight;
 	cout << "\nAre you paying with xPay? (Y/N)" << endl;
 	cin >> xPay;
+	cout << "Do you have free shipping voucher? (Y/N)" << endl;
+	cin >> voucher;
 	//calculation
 	if (totalWeight >= 1 && xPay == 'Y') {
 		cost = totalItem - totalItem + getDiscount(totalItem);
-		cout << "The Total Amount is  " << setprecision(5) << cost;
+		cout << "The Total Amount is  " << setprecision(2) << cost;
 		return 0;
 	}
 	else if (xPay == 'Y') {
 		cost = totalItem - totalItem * getDiscount(totalItem);
-		cout << "The Total Amount is  " << setprecision(5) << cost;
+		cout << "The Total Amount is  " << cost;
 		return 0;
 	}
-	else if (xPay == 'N') {
-		cout << "Do you have free shipping voucher? (Y/N)" << endl;
-	}
-	cin >> voucher;
-	if (xPay || voucher == 'N') {
+	
+	else if (xPay || voucher == 'N') {
 		cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
-		cout << "The Total Amount is  " << setprecision(5) << cost;
+		cout << "The Total Amount is  " << cost;         
 		return 0;
 	}
-	else if (totalWeight >= 1 && xPay || voucher == 'N') {
+	else if (totalWeight >= 1 && xPay || voucher == 'N') {                         
 		cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
-		cout << "The Total Amount is  " << setprecision(5) << cost;
+		cout << "The Total Amount is  " << cost;
 		return 0;
 	}
 	//output Total
