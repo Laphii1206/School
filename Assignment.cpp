@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <ctype.h>
 using namespace std;
 
 /*
@@ -29,38 +30,32 @@ int main() {
 	double totalItem, totalWeight, cost;
 	char xPay;
 	char voucher;
-
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
 	cin >> totalItem;
 	cout << "\nEnter the total weight (kg) of all items" << endl;
 	cin >> totalWeight;
 	cout << "\nAre you paying with xPay? (Y/N)" << endl;
-	cin >> xPay;
+	cin >> xPay; 
 	cout << "Do you have free shipping voucher? (Y/N)" << endl;
-	cin >> voucher;
-	//calculation
-	if (totalWeight >= 1 && xPay == 'Y') {
-		cost = totalItem - totalItem + getDiscount(totalItem);
-		cout << "The Total Amount is  " << setprecision(2) << cost;
-		return 0;
-	}
-	else if (xPay == 'Y') {
+	cin >> voucher;	
+	xPay = toupper(xPay);
+	voucher = toupper(voucher);
+	//calculation + output
+	if (xPay == 'Y') {
 		cost = totalItem - totalItem * getDiscount(totalItem);
-		cout << "The Total Amount is  " << cost;
+		cout << "The Total Amount is " << setprecision(2) << cost << endl;
 		return 0;
 	}
-	
-	else if (xPay || voucher == 'N') {
+	else if (voucher == 'Y') {
+		cost = totalItem - totalItem * getDiscount(totalItem);
+		cout << "The Total Amount is " << cost << endl;
+		return 0;
+	}
+	else if (voucher == 'N') {
 		cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
-		cout << "The Total Amount is  " << cost;         
+		cout << "The Total Amount is " << cost << endl;
 		return 0;
 	}
-	else if (totalWeight >= 1 && xPay || voucher == 'N') {                         
-		cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
-		cout << "The Total Amount is  " << cost;
-		return 0;
-	}
-	//output Total
 	return 0;
 }
