@@ -2,6 +2,14 @@
 #include <iomanip>
 using namespace std;
 
+/*
+To do list:
+- ask question to grab data
+- make function
+- create calculation
+- output total
+*/
+
 double getDiscount(double totalItem) {
 	if (totalItem >= 3000) return .2;
 	if (totalItem >= 1500) return .15;
