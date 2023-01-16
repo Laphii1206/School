@@ -32,9 +32,9 @@ int main() {
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
 	cin >> totalItem;
-	cout << "\nEnter the total weight (kg) of all items" << endl;
+	cout << "Enter the total weight (kg) of all items" << endl;
 	cin >> totalWeight;
-	cout << "\nAre you paying with xPay? (Y/N)" << endl;
+	cout << "Are you paying with xPay? (Y/N)" << endl;
 	cin >> xPay; 
 	cout << "Do you have free shipping voucher? (Y/N)" << endl;
 	cin >> voucher;	
