@@ -1,6 +1,6 @@
 1. State if the following variable names are valid.  If not valid, provide the reason. 
  
-a. while // control structure
+a. while // Reserved Word
 b. c629.2  // no . allowed
 c. total marks // no space 
 d. Gucci  // yes
@@ -12,11 +12,11 @@ i. A_verage // yes
 j. _ping  //yes
 k. $20 //yes
 l. 4teen / yes
-m.  C123 // yes?
+m.  C123 // yes
 n. A_2_5 // yes
 o. SUM  // yes 
-p. employee’s //yes
-q. A = 6*2X // no X is not found 
+p. employee’s // yes
+q. A = 6*2X // X is not a number or anything
 r. Celcius  // yes
  
 2. Write a program to declare variables with proper name and value for the following data using correct 
