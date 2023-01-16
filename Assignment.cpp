@@ -28,32 +28,43 @@ double getShippingFees(double totalWeight) {
 
 int main() {
 	double totalItem, totalWeight, cost;
-	char xPay, voucher;
+	char xPay;
+	char voucher;
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
 	cin >> totalItem;
-	cout << "Enter the total weight (kg) of all items" << endl;
+	cout << "\nEnter the total weight (kg) of all items" << endl;
 	cin >> totalWeight;
-	cout << "Are you paying with xPay? (Y/N)" << endl;
-	cin >> xPay; 
-	cout << "Do you have free shipping voucher? (Y/N)" << endl;
-	cin >> voucher;	
+	cout << "\nAre you paying with xPay? (Y/N)" << endl;
+	cin >> xPay;
 	xPay = toupper(xPay);
-	voucher = toupper(voucher);
-	//calculation + output
-	if (xPay == 'Y' || voucher == 'Y') {
-		cost = totalItem - totalItem * getDiscount(totalItem);
-	}
-	if (xPay == 'N' && voucher == 'N')
-		if (totalWeight >= 1) {
-		cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
-	}
-	else {
-		cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
-	}
 
-	cout << "The Total Amount is " << setprecision(2) << cost << endl;
- return 0;
+	if (xPay == 'Y') {
+		cost = totalItem - (totalItem * getDiscount(totalItem));
+		cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
+		return 0;
+	}
+	else
+		cout << "Do you have free shipping voucher? (Y/N)" << endl;
+
+	cin >> voucher;
+	voucher = toupper(voucher);
+
+	if (voucher == 'Y') {
+		cost = totalItem - totalItem * getDiscount(totalItem);
+		cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
+	}
+	if (xPay == 'N' && voucher == 'N') {
+		if (totalWeight >= 1) {
+			cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
+			cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
+		}
+		else {
+			cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
+			cout << "The Total Amount is " << cost << endl;
+		}
+	}
+	return 0;
 }
 
 // do a better result output
