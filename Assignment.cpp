@@ -53,7 +53,7 @@ int main() {
 		return 0;
 	}
 	else if (voucher == 'N' && totalWeight >= 1) {
-		cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight + getShippingFees(totalWeight);
+		cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
 		cout << "The Total Amount is " << cost << endl;
 		return 0;
 	}
