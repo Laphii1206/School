@@ -45,10 +45,11 @@ int main() {
 	if (xPay == 'Y' || voucher == 'Y') {
 		cost = totalItem - totalItem * getDiscount(totalItem);
 	}
-	else if (xPay == 'N' && voucher == 'N' && totalWeight >= 1) {
+	if (xPay == 'N' && voucher == 'N')
+     if(totalWeight >= 1) {
 		cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
 	}
-	else if (xPay == 'N' && voucher == 'N' ) {
+	else {
 		cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
 	}
 
