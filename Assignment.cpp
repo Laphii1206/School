@@ -45,12 +45,13 @@ int main() {
 	if (xPay == 'Y' || voucher == 'Y') {
 		cost = totalItem - totalItem * getDiscount(totalItem);
 	}
-	else if (voucher == 'N' ) {
-		cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
-	}
 	else if (voucher == 'N' && totalWeight >= 1) {
 		cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
 	}
+	else if (xPay == 'N' && voucher == 'N' ) {
+		cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
+	}
+
 	cout << "The Total Amount is " << setprecision(2) << cost << endl;
  return 0;
 }
