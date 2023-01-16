@@ -42,14 +42,9 @@ int main() {
 	xPay = toupper(xPay);
 	voucher = toupper(voucher);
 	//calculation + output
-	if (xPay == 'Y') {
+	if (xPay == 'Y' || voucher == 'Y') {
 		cost = totalItem - totalItem * getDiscount(totalItem);
 		cout << "The Total Amount is " << setprecision(2) << cost << endl;
-		return 0;
-	}
-	else if (voucher == 'Y') {
-		cost = totalItem - totalItem * getDiscount(totalItem);
-		cout << "The Total Amount is " << cost << endl;
 		return 0;
 	}
 	else if (voucher == 'N' ) {
