@@ -34,9 +34,9 @@
  using namespace std; 
    int main(){
     double num1,num2,result;
-    cout << "Input the how many questions is there" << endl;
+    cout << "Input the number of questions ->" << endl;
     cin >> num1 ;
-    cout << "input how many did the student answer correct" << endl;
+    cout << "Input the number of questions the student answer correctly ->" << endl;
     cin >> num2
     result = num2 * 100 / num1;
     cout << "The student's score is " << result <<endl;
