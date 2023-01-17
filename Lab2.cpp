@@ -33,8 +33,7 @@
  #include <iostream>             
  using namespace std; 
    int main(){
-     double num1;
-     double result;
+    double num1,result;
     cout << "Input the how many questions is correct ->" << endl;
     cin >> num1 ;
     result = num1 * 100 / 40;
