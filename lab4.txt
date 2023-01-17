@@ -22,15 +22,15 @@ r. Celcius  // yes
 2. Write a program to declare variables with proper name and value for the following data using correct 
 data type:  
  
-a. a data that stores the score of a test  // float
-b. a data that tells if a person is vaccinated // bool
-c. a data that stores the level of a floor in a high-rise building // double
-d. a data that stores the index in alphabetical order (a-z)   // char
-e. a data that stores car plate number   // double
-f. a data that stores the paycheck amount  // double
-g. a data that stores the number of rooms in a school  // double
-h. a data that stores the population in a country   // double
-i. a data that stores the availability of a product  // bool
+a. a data that stores the score of a test  // double result = 88;
+b. a data that tells if a person is vaccinated // bool vaccinated = true;
+c. a data that stores the level of a floor in a high-rise building // string floor = "level 3";
+d. a data that stores the index in alphabetical order (a-z)   // char alphabet = 1;
+e. a data that stores car plate number   // string plate = "WKS 9999";
+f. a data that stores the paycheck amount  // double paycheck = 828;
+g. a data that stores the number of rooms in a school  // double room = 9101;
+h. a data that stores the population in a country   // double population = idk;
+i. a data that stores the availability of a product  // bool availability = false;
  
 3. Provide the correct data type for each of the following constants: 
  
