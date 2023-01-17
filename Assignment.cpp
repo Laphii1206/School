@@ -44,8 +44,9 @@ int main() {
 		return 0;
 	}
 	else
+	{
 		cout << "Do you have free shipping voucher? (Y/N)" << endl;
-
+	}
 	cin >> voucher;
 	voucher = toupper(voucher);
 
