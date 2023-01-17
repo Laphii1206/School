@@ -28,3 +28,16 @@
        cout << "Current Temperature is " << celcius << "°C or "<< farenheit <<" °F " << endl;
      return 0;
    }
+
+// Question 3 
+ #include <iostream>             
+ using namespace std; 
+   int main(){
+     double num1;
+     double result;
+    cout << "Input the how many questions is correct ->" << endl;
+    cin >> num1 ;
+    result = num1 * 100 / 40;
+    cout << "The student's score is " << result <<endl;
+     return 0;
+   }
