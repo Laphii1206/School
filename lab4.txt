@@ -1,7 +1,7 @@
 1. State if the following variable names are valid.  If not valid, provide the reason. 
  
 a. while // Reserved Word
-b. c629.2  // no . allowed
+b. c629.2  // no numeric
 c. total marks // no space 
 d. Gucci  // yes
 e. SalesTax // yes
