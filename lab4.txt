@@ -11,7 +11,7 @@ h. aBnB // yes
 i. A_verage // yes
 j. _ping  //yes
 k. $20 // cant start with special character
-l. 4teen / yes
+l. 4teen / cant start with number
 m.  C123 // yes
 n. A_2_5 // yes
 o. SUM  // yes 
