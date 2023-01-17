@@ -10,7 +10,7 @@ g. Jan-total // no
 h. aBnB // yes
 i. A_verage // yes
 j. _ping  //yes
-k. $20 // cant start with special character
+k. $20 // dollar sign can
 l. 4teen / cant start with number
 m.  C123 // yes
 n. A_2_5 // yes
