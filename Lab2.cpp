@@ -33,10 +33,12 @@
  #include <iostream>             
  using namespace std; 
    int main(){
-    double num1,result;
-    cout << "Input the how many questions is correct ->" << endl;
+    double num1,num2,result;
+    cout << "Input the how many questions is there" << endl;
     cin >> num1 ;
-    result = num1 * 100 / 40;
+    cout << "input how many did the student answer correct" << endl;
+    cin >> num2
+    result = num2 * 100 / num1;
     cout << "The student's score is " << result <<endl;
      return 0;
    }
