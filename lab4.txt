@@ -29,7 +29,7 @@ d. a data that stores the index in alphabetical order (a-z)   // char alphabet =
 e. a data that stores car plate number   // string plate = "WKS 9999";
 f. a data that stores the paycheck amount  // double paycheck = 828;
 g. a data that stores the number of rooms in a school  // double room = 9101;
-h. a data that stores the population in a country   // double population = idk;
+h. a data that stores the population in a country   // double population = 125215;
 i. a data that stores the availability of a product  // bool availability = false;
  
 3. Provide the correct data type for each of the following constants: 
