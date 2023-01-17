@@ -15,7 +15,7 @@ l. 4teen / cant start with number
 m.  C123 // yes
 n. A_2_5 // yes
 o. SUM  // yes 
-p. employee’s // yes
+p. employee’s // not ok
 q. A = 6*2X // X is not a number or anything
 r. Celcius  // yes
  
