@@ -48,13 +48,13 @@ k. 0 //bool
 
 4. Write statement(s) to accomplish each of the followings: 
  
-a. Initialize a currency symbol to US dollar 
-b. Initialize the fixed overtime (OT) rate to 25.5 
-c. Initialize the government service tax to 7% 
-d. Define the currency exchange rate from Australian Dollar to RM (1 AusDollar = RM 2.94) 
-e. Define the fixed traffic offence summon rate to 300 
-f. Initialize the popular social networking service to TikTok 
-g. Define the most popular male name as James 
+a. Initialize a currency symbol to US dollar \\ char currencySymbol = '$';
+b. Initialize the fixed overtime (OT) rate to 25.5 \\ double overTime = x * 25.5;
+c. Initialize the government service tax to 7% \\ double tax = x * 0.7;
+d. Define the currency exchange rate from Australian Dollar to RM (1 AusDollar = RM 2.94) \\ double x = y * 2.94;
+e. Define the fixed traffic offence summon rate to 300 \\ 
+f. Initialize the popular social networking service to TikTok \\ 
+g. Define the most popular male name as James \\ string x = 'James';
  
 5. Provide the value of each of the following expressions: 
  
