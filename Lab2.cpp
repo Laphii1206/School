@@ -57,4 +57,16 @@ int main() {
 	cout << "Your Body MASS Index is " << bodyMass << endl;
 	return 0;
 }
+//Question 5 
+// Question 6 
+#include <iostream>             
+using namespace std;
+
+int main() {
+	double width, length, height;
+	cout << "Pls enter width length and height seperate with one or more space" << endl;
+	cin >> length >> width >> height;
+	double pyramid = length * width * height / 3;
+	cout << "The volume of a pyramid is " << pyramid << endl;
+	return 0;
 
