@@ -42,3 +42,19 @@
     cout << "The student's score is " << result <<endl;
      return 0;
    }
+
+// Question 4 Write a program to read in height in meter and weight in kg.  Calculate and display the body mass index. 
+ #include <iostream>
+ using namespace std;
+
+int main() {
+	double height, weight,bodyMass;
+	cout << "Insert your height in (m)" << endl;
+	cin >> height;
+	cout << "Insert your weight in (kg)" << endl;
+	cin >> weight;
+	bodyMass = weight / (height*height) ;
+	cout << "Your Body MASS Index is " << bodyMass << endl;
+	return 0;
+}
+
