@@ -97,3 +97,6 @@ a. E = D % A * B // 10
 b. E = A * B + D/C // 24
 c. E=5*A/D*(B+1) // 10
 d. E=D/B*((A+4)/(C+1)) // 6
+
+//always to from left to righ when there is no bracket
+//do * / % first then only + - 
