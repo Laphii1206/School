@@ -28,7 +28,7 @@ double getShippingFees(double totalWeight) {
 
 int main() {
 	double	totalItem,totalWeight,cost= 0;
-	char xPay,voucher= 'Y';
+	char xPay,voucher= 'N';
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
 	cin >> totalItem; << endl;
