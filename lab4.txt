@@ -49,19 +49,19 @@ k. 0 //bool
 4. Write statement(s) to accomplish each of the followings: 
  
 a. Initialize a currency symbol to US dollar \\ char currencySymbol = '$';
-b. Initialize the fixed overtime (OT) rate to 25.5 \\ double overTime = x * 25.5;
-c. Initialize the government service tax to 7% \\ double tax = x * 0.7;
-d. Define the currency exchange rate from Australian Dollar to RM (1 AusDollar = RM 2.94) \\ double x = y * 2.94;
-e. Define the fixed traffic offence summon rate to 300 \\ 
-f. Initialize the popular social networking service to TikTok \\ 
+b. Initialize the fixed overtime (OT) rate to 25.5 \\ float overTime =25.5;
+c. Initialize the government service tax to 7% \\ double tax = 7/100;
+d. Define the currency exchange rate from Australian Dollar to RM (1 AusDollar = RM 2.94) \\ float a$toMYRrate = 2.94;
+e. Define the fixed traffic offence summon rate to 300 \\ const int TRAFFIC_OFFENSE_SUMMON_RATE = 300
+f. Initialize the popular social networking service to TikTok \\ string popular = "tiktok";
 g. Define the most popular male name as James \\ string x = 'James';
  
 5. Provide the value of each of the following expressions: 
  
 a. 10 / 4  //2
-b. 10 / 4.0 //2 
+b. 10 / 4.0 //2 .5
 c. 8 + 2 * 3  //14
-d. (8 + 2) % 3 * 3 //1  
+d. (8 + 2) % 3 * 3 //3  
 e. (8 – 2) % (3 * 3)  //6
 f. 28 % 3 + 5 / 2  // 3
 g. 6 * 2 / 3  // 4
@@ -72,35 +72,28 @@ h. 6 * (2 /3)  // 0
 (a) 4 >= 1  // 1
 (b) 5 < 15   // 1
 (c) 43 <= 43  /1
-(d) 2 == 3  /0
-(e) 2 + 5 != 7 /0  
+(d) 2 == 3  /0 
+(e) 2 + 5 != 7 /0
+
+// do And first then only or 
+// not() is swap the true annd false 
+
 (f) True and False  //1
-(g) True or False   // 1
-(h) False and True or True //1 
-(i) False or True and True  //1
+(g) True or False   // 0
+(h) False and True or True //1  
+(i) False or True and True  //0
 (j) True or True and False //1
 (k) True or not(True and False) //1  
 (l) not (True or False)  //1
  
 7. Write the following equations in programming language format: 
  
+7a X = Y + (3*Z) - (Z+Y) / (Z -3) 
+7b X = 5*Y + ((3*Z-1) / ( 4* (3 * Z+ 1 ) - Y))
  
 8. Evaluate the following expression and result given that A = 5, B = 4, C = 3 and D = 12. 
  
-#include <iostream>
-using namespace std;
-
-int main(){
-   A = 5,
-   B = 4,
-   C = 3,
-   D = 12;
-	double E =copy paste the question;
-   cout << e;
-   return 0;
-}
-
-a. E = D % A * B // 8
+a. E = D % A * B // 10
 b. E = A * B + D/C // 24
 c. E=5*A/D*(B+1) // 10
-d. E=D/B*((A+4)/(C+1) // syntax error but is 6 with fix
+d. E=D/B*((A+4)/(C+1)) // 6
