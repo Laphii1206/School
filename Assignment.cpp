@@ -38,8 +38,7 @@ int main() {
 	cin >> xPay;
 	xPay = toupper(xPay);
 
-	if (xPay == 'Y') {}
-	else
+	if (xPay == 'N')
 	{
 		cout << "Do you have free shipping voucher? (Y/N)" << endl;
 		cin >> voucher;
