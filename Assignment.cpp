@@ -31,11 +31,11 @@ int main() {
 	char xPay,voucher= 'Y';
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
-	cin >> totalItem;
-	cout << "\nEnter the total weight (kg) of all items" << endl;
-	cin >> totalWeight;
-	cout << "\nAre you paying with xPay? (Y/N)" << endl;
-	cin >> xPay;
+	cin >> totalItem; << endl;
+	cout << "Enter the total weight (kg) of all items" << endl;
+	cin >> totalWeight; << endl;
+	cout << "Are you paying with xPay? (Y/N)" << endl;
+	cin >> xPay; 
 	xPay = toupper(xPay);
 
 	if (xPay == 'N') {
