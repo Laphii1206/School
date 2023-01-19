@@ -27,8 +27,8 @@ double getShippingFees(double totalWeight) {
 }
 
 int main() {
-	double totalItem, totalWeight, cost;
-	char xPay,voucher;
+	double	totalItem,totalWeight,cost= 0;
+	char xPay,voucher= 'Y';
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
 	cin >> totalItem;
@@ -38,32 +38,25 @@ int main() {
 	cin >> xPay;
 	xPay = toupper(xPay);
 
-	if (xPay == 'Y') {
-		cost = totalItem - (totalItem * getDiscount(totalItem));
-		cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
-		return 0;
-	}
+	if (xPay == 'Y') {}
 	else
 	{
 		cout << "Do you have free shipping voucher? (Y/N)" << endl;
+		cin >> voucher;
+		voucher = toupper(voucher);
 	}
-	cin >> voucher;
-	voucher = toupper(voucher);
-
-	if (voucher == 'Y') {
+	if (xPay || voucher == 'Y') {
 		cost = totalItem - totalItem * getDiscount(totalItem);
-		cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
 	}
 	if (xPay == 'N' && voucher == 'N') {
 		if (totalWeight <= 1) {
 			cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
-			cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
 		}
 		else {
 			cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
-			cout << "The Total Amount is " << cost << endl;
 		}
 	}
+	cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
 	return 0;
 }
 
