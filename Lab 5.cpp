@@ -44,14 +44,14 @@ int main() {
     cout << "The Biggest number is ";
     if (a > b && a > c)
         cout << a << endl;
-    else if (b > c && b > a)
+    else if (b > c )
         cout << b << endl;
     else
         cout << c << endl;
     cout << "The Smallest number is ";
     if (a < b && a < c)
         cout << a << endl;
-    else if (b < c && b < a)
+    else if (b < c)
         cout << b << endl;
     else
         cout << c << endl;
