@@ -33,6 +33,31 @@ int main() {
     return 0;
 }
 
+//question 3 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b,c;
+    cout << "Insert 3 number seperate with space" << endl;
+    cin >> a >> b >> c;
+    cout << "The Biggest number is ";
+    if (a > b && a > c)
+        cout << a << endl;
+    else if (b > c && b > a)
+        cout << b << endl;
+    else
+        cout << c << endl;
+    cout << "The Smallest number is ";
+    if (a < b && a < c)
+        cout << a << endl;
+    else if (b < c && b < a)
+        cout << b << endl;
+    else
+        cout << c << endl;
+    return 0;
+}
+
 //exercise that lecture given
 #include <iostream>
 using namespace std;
