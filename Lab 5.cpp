@@ -24,13 +24,13 @@ int main(){
     cout << "Insert the user score" << endl;
     cin >> num;
     if (num>=80)
-    cout << "Pass and Good";
+    cout << "Pass and Good" << endl;
     else if (num>=50 && num<=79)
-    cout << "Pass";
+    cout << "Pass" << endl;
     else if (num>=45 && num<=49)
-    cout << "Fail and Resit";
+    cout << "Fail and Resit" << endl;
     else 
-    cout << "Fail";
+    cout << "Fail" << endl;
     return 0;
     }
 
