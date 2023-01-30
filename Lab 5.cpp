@@ -58,6 +58,24 @@ int main() {
     return 0;
 }
 
+//question 4
+#include <iostream>
+using namespace std;
+
+int main() {
+    int hours;
+    cout << "insert the parking hours" << endl;
+    cin >> hours;
+    if (hours <= 2)
+        cout << "Parking Fees is RM2" << endl;
+    else if (hours >= 3 && hours <= 9)
+        cout << "Parking Fees is RM" << hours << endl;
+    else
+        cout << "Parking Fees is RM10";
+    return 0;
+}
+
+
 //exercise that lecture given
 #include <iostream>
 using namespace std;
