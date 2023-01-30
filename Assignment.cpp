@@ -31,9 +31,9 @@ int main() {
 	char xPay,voucher= 'N';
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
-	cin >> totalItem >> endl;
+	cin >> totalItem;
 	cout << "Enter the total weight (kg) of all items" << endl;
-	cin >> totalWeight >> endl;
+	cin >> totalWeight;
 	cout << "Are you paying with xPay? (Y/N)" << endl;
 	cin >> xPay; 
 	xPay = toupper(xPay);
@@ -46,7 +46,7 @@ int main() {
 	if (xPay || voucher == 'Y') {
 		cost = totalItem - totalItem * getDiscount(totalItem);
 	}
-	if (xPay == 'N' && voucher == 'N') {
+	else if (xPay == 'N' && voucher == 'N') {
 		if (totalWeight <= 1) {
 			cost = totalItem - totalItem * getDiscount(totalItem) + getShippingFees(totalWeight);
 		}
@@ -57,5 +57,4 @@ int main() {
 	cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
 	return 0;
 }
-
 // do a better result output
