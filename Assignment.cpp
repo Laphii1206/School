@@ -31,9 +31,9 @@ int main() {
 	char xPay,voucher= 'N';
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
-	cin >> totalItem; << endl;
+	cin >> totalItem << endl;
 	cout << "Enter the total weight (kg) of all items" << endl;
-	cin >> totalWeight; << endl;
+	cin >> totalWeight << endl;
 	cout << "Are you paying with xPay? (Y/N)" << endl;
 	cin >> xPay; 
 	xPay = toupper(xPay);
