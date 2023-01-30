@@ -1,3 +1,4 @@
+// question 1
 #include <iostream>
 using namespace std;
 int main(){
@@ -16,6 +17,23 @@ int main(){
 return 0;
 }
 
+//question 2
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b;
+    cout << "Insert 2 number seperate with space" << endl;
+    cin >> a >> b;
+    if (a > b)
+        cout << a << " is bigger than " << b << endl;
+    else
+        cout << a << " is smaller than " << b << endl;
+
+    return 0;
+}
+
+//exercise that lecture given
 #include <iostream>
 using namespace std;
 
