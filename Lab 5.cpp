@@ -75,6 +75,29 @@ int main() {
     return 0;
 }
 
+//question 5
+#include <iostream>
+using namespace std;
+
+int main() {
+    double sales,comission;
+    cout << "insert the sales amount" << endl;
+    cin >> sales;
+    if (sales <= 5000) {
+        comission = sales * 0.1;
+        cout << "Your Comission is " << comission << endl;
+    }
+    else if (sales >= 5001 && sales <= 10000) {
+        comission = sales * 0.15;
+        cout << "Your Comission is "<< endl;
+    }
+    else if (sales > 10000) {
+        comission = sales * 0.2;
+        cout << "Your Comission is " << endl;
+    }
+    return 0;
+}
+
 //question 6
 #include <iostream>
 using namespace std;
