@@ -100,7 +100,9 @@ int main() {
     int num;
     cout << "Insert a number between 1 to 50" << endl;
     cin >> num;
-    if(num < 1 || num > 50)
+    if (num == (int)num) //convert to integer
+    cout << "This is not a integer" << endl;
+    else if(num < 1 || num > 50)
         cout << "Invalid range" << endl;
     else if (num % 2 == 0) {
         cout << num << " is an even" << endl;
@@ -118,6 +120,7 @@ int main() {
     }
     return 0;
 }
+
 
 //exercise that lecture given
 #include <iostream>
