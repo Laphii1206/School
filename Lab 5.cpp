@@ -28,7 +28,7 @@ int main() {
     if (a > b)
         cout << a << " is bigger than " << b << endl;
     else
-        cout << a << " is smaller than " << b << endl;
+        cout << b << " is bigger than " << a << endl;
 
     return 0;
 }
