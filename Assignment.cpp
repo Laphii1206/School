@@ -27,7 +27,7 @@ double getShippingFees(double totalWeight) {
 }
 
 int main() {
-	double	totalItem,totalWeight,cost= 0;
+	double totalItem,totalWeight,cost= 0;
 	char xPay,voucher= 'N';
 	//ask questions
 	cout << "Enter the total amount of all items" << endl;
@@ -54,7 +54,7 @@ int main() {
 			cost = totalItem - totalItem * getDiscount(totalItem) + totalWeight * getShippingFees(totalWeight);
 		}
 	}
-	cout << "The Total Amount is " << fixed << setprecision(2) << cost << endl;
+	cout << "The Total Amount is RM" << fixed << setprecision(2) << cost << endl;
 	return 0;
 }
 // do a better result output
