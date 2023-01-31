@@ -97,28 +97,29 @@ int main() {
 using namespace std;
 
 int main() {
-    int num;
-    cout << "Insert a number between 1 to 50" << endl;
-    cin >> num;
-    if (num != (int)num)
-    cout << "This is not a integer" << endl; 
-    else if (num < 1 || num > 50)
-        cout << "Invalid range" << endl;
-    else if (num % 2 == 0) {
-        cout << num << " is an even" << endl;
-         if (num >= 10)
-            cout << num << " is 2-digit integer" << endl;
-        else
-            cout << num << " is 1-digit integer" << endl;
-    }
-    else {
-        cout << num << " is an odd" << endl;
-        if (num >= 10)
-            cout << num << " is 2-digit integer" << endl;
-        else
-            cout << num << " is 1-digit integer" << endl;
-    }
-    return 0;
+	double num;
+	cout << "Insert a number between 1 to 50" << endl;
+	cin >> num;
+	if (num != (int)num) {
+		cout << "This is not a integer" << endl;
+		return 0;
+	}
+	else if (num < 1 || num > 50) {
+		cout << "Invalid range" << endl;
+		return 0;
+	}
+
+	if ((int)num % 2 == 0)
+		cout << num << " is an even" << endl;
+	else
+		cout << num << " is an odd" << endl;
+
+	if (num >= 10)
+		cout << num << " is 2-digit integer" << endl;
+	else
+		cout << num << " is 1-digit integer" << endl;
+
+	return 0;
 }
 
 //exercise that lecture given
