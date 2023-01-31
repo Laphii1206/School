@@ -84,16 +84,14 @@ int main() {
     cin >> sales;
     if (sales <= 5000) {
         comission = sales * 0.1;
-        cout << "Your comission is " << comission << endl;
     }
     else if (sales >= 5001 && sales <= 10000) {
         comission = sales * 0.15;
-        cout << "Your comission is " << comission << endl;
     }
     else if (sales > 10000) {
         comission = sales * 0.2;
-        cout << "Your comission is " << comission << endl;
     }
+    cout << "Your comission is " << comission << endl;
     return 0;
 }
 
