@@ -82,15 +82,12 @@ int main() {
     double sales,comission;
     cout << "insert the sales amount" << endl;
     cin >> sales;
-    if (sales <= 5000) {
+    if (sales <= 5000) 
         comission = sales * 0.1;
-    }
-    else if (sales >= 5001 && sales <= 10000) {
-        comission = sales * 0.15;
-    }
-    else if (sales > 10000) {
-        comission = sales * 0.2;
-    }
+    else if (sales >= 5001 && sales <= 10000) 
+        comission = sales * 0.15;  
+    else
+        comission = sales * 0.2;  
     cout << "Your comission is " << comission << endl;
     return 0;
 }
