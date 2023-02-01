@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	int selection, num1, num2, answer;
+	int selection, num1, num2;
 	cout << "Enter 2 number seperate by space" << endl;
 	cin >> num1 >> num2;
 	cout << "Selection of Operator"
