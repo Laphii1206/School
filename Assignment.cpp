@@ -3,6 +3,14 @@
 #include <ctype.h>
 using namespace std;
 
+/*
+To do list:
+grab data
+ask voucher and xpay
+calculation
+output awesomer result
+*/
+
 double getDiscount(double totalItem) {
 	if (totalItem >= 3000) return .2;
 	if (totalItem >= 1500) return .15;
