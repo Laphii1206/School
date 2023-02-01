@@ -44,7 +44,7 @@ int main() {
 	int selection,menu,amount;
 	double price,totalPrice;
 	cout << "Select a ice-cream from the menu" << endl
-		<< "1.Singlecone 12.5 \n2.Double cone 17.9 \n3.Triple cone 20.9 \n4.Banana Split 27.9" << endl;
+		<< "1. Singlecone 12.5 \n2. Double cone 17.9 \n3. Triple cone 20.9 \n4. Banana Split 27.9" << endl;
 	cin >> selection;
 	cout << "Insert the amount of quantity" << endl;
 	cin >> amount;
@@ -75,6 +75,27 @@ int main() {
 	case 'u': case 'U':
 		cout << letter << " is a vowel" << endl; break;
 	default: cout << letter << " is a consonant" << endl;
+	}
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int selection;
+	double r;
+	double pi = 3.14;
+	cout << "Enter a radius" << endl;
+	cin >> r;
+	cout << "Select what to calculate" << endl
+		<< "1. Perimeter \n2. Area \n3. Volume" << endl;
+	cin >> selection;
+	switch (selection) {
+	case 1: cout << "The Perimeter is " << 2 * r * pi << endl; break;
+	case 2: cout << "The Area is " << pi * (r*r); break;
+	case 3: cout << "The Volume is " << 4/3 * pi * (r*r*r); break;
+	default: cout << "No such choice...";
 	}
 	return 0;
 }
