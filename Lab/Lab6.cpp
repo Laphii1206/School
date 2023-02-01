@@ -1,3 +1,4 @@
+//Question 1
 #include <iostream>
 using namespace std;
 
@@ -19,6 +20,7 @@ int main() {
 	return 0;
 }
 
+//Question 2
 #include <iostream>
 using namespace std;
 
@@ -37,6 +39,7 @@ int main() {
 	return 0;
 }
 
+//Question 3
 #include <iostream>
 using namespace std;
 
@@ -60,6 +63,7 @@ int main() {
 	return 0;
 }
 
+//Question 4
 #include <iostream>
 using namespace std;
 
@@ -79,6 +83,7 @@ int main() {
 	return 0;
 }
 
+//Question 5
 #include <iostream>
 using namespace std;
 
