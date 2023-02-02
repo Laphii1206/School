@@ -16,7 +16,7 @@ int main() {
 	switch (selection) {
 	case 1: cout << "The operation result is " << num1 << " + " << num2 << " = " << num1 + num2; break;
 	case 2: cout << "The operation result is " << num1 << " - " << num2 << " = " << num1 - num2; break;
-	case 3: cout << "The operation result is " << num1 << " * " << num2 << " = " << evnum1 * num2; break;
+	case 3: cout << "The operation result is " << num1 << " * " << num2 << " = " << num1 * num2; break;
 	case 4: cout << "The operation result is " << num1 << " / " << num2 << " = " << num1 / num2; break;
 	default: cout << "No such choice...";
 	}
@@ -50,7 +50,7 @@ int main() {
 	int selection,amount;
 	double price,totalPrice;
 	cout << "Select a ice-cream from the menu" << endl
-		<< "1. Singlecone 12.5 \n2. Double cone 17.9 \n3. Triple cone 20.9 \n4. Banana Split 27.9" << endl;
+		<< "1. Singlecone RM12.5 \n2. Double cone RM17.9 \n3. Triple cone RM20.9 \n4. Banana Split RM27.9" << endl;
 	cin >> selection;
 	cout << "Insert the amount of quantity" << endl;
 	cin >> amount;
@@ -102,7 +102,7 @@ int main() {
 	switch (selection) {
 	case 1: cout << "The Perimeter is " << 2 * r * pi << endl; break;
 	case 2: cout << "The Area is " << pi * (r*r); break;
-	case 3: cout << "The Volume is " << 4/3 * pi * (r*r*r); break;
+	case 3: cout << "The Volume is " << 4/3.0 * pi * (r*r*r); break;
 	default: cout << "No such choice...";
 	}
 	return 0;
