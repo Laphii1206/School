@@ -3,17 +3,20 @@
 using namespace std;
 
 int main() {
-	int selection, num1, num2;
-	cout << "Enter 2 number seperate by space" << endl;
-	cin >> num1 >> num2;
+	int selection;
+	double num1, num2;
+	cout << "Enter first number" << endl;
+	cin >> num1;
+	cout << "Enter second number" << endl;
+	cin >> num2;
 	cout << "Selection of Operator"
-		<< "\n1.Add \n2.Subtract \n3.Multiply \n4.Divide" << endl
-		<< "Enter your selection (1/2/3/4) ->" << endl;
+		<< "\n1. Add \n2. Subtract \n3. Multiply \n4. Divide" << endl
+		<< "Enter your selection (1/2/3/4) ->";
 	cin >> selection;
 	switch (selection) {
 	case 1: cout << "The operation result is " << num1 << " + " << num2 << " = " << num1 + num2; break;
 	case 2: cout << "The operation result is " << num1 << " - " << num2 << " = " << num1 - num2; break;
-	case 3: cout << "The operation result is " << num1 << " * " << num2 << " = " << num1 * num2; break;
+	case 3: cout << "The operation result is " << num1 << " * " << num2 << " = " << evnum1 * num2; break;
 	case 4: cout << "The operation result is " << num1 << " / " << num2 << " = " << num1 / num2; break;
 	default: cout << "No such choice...";
 	}
@@ -44,7 +47,7 @@ int main() {
 using namespace std;
 
 int main() {
-	int selection,menu,amount;
+	int selection,amount;
 	double price,totalPrice;
 	cout << "Select a ice-cream from the menu" << endl
 		<< "1. Singlecone 12.5 \n2. Double cone 17.9 \n3. Triple cone 20.9 \n4. Banana Split 27.9" << endl;
