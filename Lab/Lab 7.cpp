@@ -47,6 +47,7 @@ cout << "The minimum deposit for a saving account is $250" <<endl
 cout << "\nEnter the deposit amount to open saving account (minimum is $250)" <<endl;
 cin >> balance;
 }
+do {
 cout << "1. Deposit money \n2. Withdraw money \n3. Check balance" << endl
 cout << "Selection your option (1 - 3, 0 to quit): ";
 cin >> selection;
@@ -55,8 +56,8 @@ case 1;
 case 2;
 case 3: cout << "Balance in the saving account: $" << balance << endl;
 default: cout << "Invalid options";
-
-}
+} }
+while (selection = 1,2,3);
 
 
 
