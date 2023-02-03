@@ -32,3 +32,24 @@ int main(){
 }
 
 //question 4 
+}
+#include <iostream>
+using namespace std;
+
+int main(){
+double balance;
+cout << "Welcome to Laphii Bank System" << endl;
+cout << "\nEnter the deposit amount to open saving account (minimum is $250)" << endl;
+cin >> balance;
+while (balance <250){
+cout << "The minimum deposit for a saving account is $250" <<endl
+cout << "\nEnter the deposit amount to open saving account (minimum is $250)" <<endl;
+cin >> balance;
+}
+
+
+
+
+
+return 0;
+}
