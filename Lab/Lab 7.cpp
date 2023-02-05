@@ -55,3 +55,19 @@ int main() {
 }
 
 //question 5
+#include <iostream>
+using namespace std;
+
+int main() {
+	double balance = 200,
+		yearInterest = 0.3;
+	int i = 0;
+	cout << "Bank Balance $200" << endl
+		<< "Interest for every year" << endl;
+	do {
+		i++;
+		balance = balance + (balance * yearInterest);
+		cout << "Year " << i << ": $" << balance << endl;
+	} while (i < 10);
+	return 0;
+}
