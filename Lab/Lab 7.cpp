@@ -46,11 +46,11 @@ int main() {
 		if (num != 0)
 			counter++;
 		else break;
-	} while (num != 0); {
-		average = total / counter;
-		cout << "The average is " << average << endl;
-		return 0;
-	}
+	} while (num != 0); 
+	average = total / counter;
+	cout << "The average is " << average << endl;
+	return 0;
+	
 
 }
 
