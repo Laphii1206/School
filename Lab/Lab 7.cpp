@@ -39,7 +39,7 @@ int main() {
 	int num,average =0;
 	int total = 0;
 	int counter = 0;
-	cout << "Insert number here to calculate averate , press 0 to start calculating" << endl;
+	cout << "Insert number to calculate average , press 0 to start calculating" << endl;
 	do {		
 		cin >> num;
 		total = total + num;
