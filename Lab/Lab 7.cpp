@@ -32,3 +32,26 @@ int main(){
 }
 
 //question 4 
+#include <iostream>
+using namespace std;
+
+int main() {
+	int num,average =0;
+	int total = 0;
+	int counter = 0;
+	cout << "Insert number here to calculate averate , press 0 to start calculating" << endl;
+	do {		
+		cin >> num;
+		total = total + num;
+		if (num != 0)
+			counter++;
+		else break;
+	} while (num != 0); {
+		average = total / counter;
+		cout << "The average is " << average << endl;
+		return 0;
+	}
+
+}
+
+//question 5
