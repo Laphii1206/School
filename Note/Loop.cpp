@@ -1,4 +1,4 @@
-[9:46 am, 03/02/2023] +60 12-303 5224: #include <iostream>
+#include <iostream>
 using namespace std;
 //for loop
 int main()
@@ -19,10 +19,13 @@ int main()
 	}
 	cout << c << endl;
 }
-[9:46 am, 03/02/2023] +60 12-303 5224: #include <iostream>
+
+
+#include <iostream>
 using namespace std;
-//1
-int main7_1()
+//1 7_1
+
+int main()
 {
 	int num = 2;
 	cout << "The even numbers between 1 and 20 are:\n";
@@ -37,10 +40,12 @@ int main7_1()
 	//2, 4, 6, 8, 10, 12, 14, 16, 18 and 20.
 	return 0;
 }
-[9:46 am, 03/02/2023] +60 12-303 5224: #include <iostream>
+#include <iostream>
 using namespace std;
+
 //loop
-int mainwhile()
+int main
+while()
 {
 	int counter = 11;//1. control variable with a value	
 	while (counter <= 10) {//2. expression that controls to continue to loop
