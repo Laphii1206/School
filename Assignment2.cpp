@@ -5,7 +5,7 @@ int main() {
 	double balance;
 	int selection;
 	double deposit, withdraw;
-	cout << "Welcome to Laphii Bank System" << endl << endl
+	cout << "Welcome to The Bank System" << endl << endl
 		<< "Enter the deposit amount to open saving account (minimum is $250): ";
 	cin >> balance;
 	while (balance < 250) {
