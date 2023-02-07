@@ -64,7 +64,7 @@ int main() {
 	int i,num;
 	cout << "Input a positive integer :";
 	cin >> num;
-	while (num < 0) {
+	for (;num < 0;) {
 		cout << "This is not a positive integer" << endl;
 		cout << "Input a positive integer :";
 		cin >> num;
