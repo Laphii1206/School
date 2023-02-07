@@ -60,4 +60,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
-
+int main() {
+	int i,num;
+	cout << "Input a positive integer :";
+	cin >> num;
+	while (num < 0) {
+		cout << "This is not a positive integer" << endl;
+		cout << "Input a positive integer :";
+		cin >> num;
+	}
+	cout << "The Factor of " << num << " is ";
+	for (i = 1; i <= num;i++) {
+		if (num % i == 0) {
+			cout << i << " ";
+		}
+	}
+return 0;
+}
