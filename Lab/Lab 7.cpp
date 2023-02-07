@@ -20,7 +20,7 @@ int main(){
     int value;
     cout << "Insert a number" << endl;
     cin >> value;
-    while (value < 0){
+    while (value <= 0){
     cout << "Given number is not positive" << endl;
     cin >> value;
     }
@@ -38,16 +38,16 @@ using namespace std;
 int main() {
 	double average, num, total;
 	int counter = 0;
-	cout << "Insert number to calculate average , press 0 to start calculating" << endl;
+	cout << "Input any amount of number, Input 0 to start calculating" << endl;
 	do {		
 		cin >> num;
 		total = total + num;
-		if (num != 0)
 			counter++;
-		else break;
 	} while (num != 0); 
+	counter = counter - 1;
 	average = total / counter;
-	cout << "The average is " << average << endl;
+	cout << "The total is " << total << endl <<
+	 << "The average is " << average << endl;
 	return 0;
 }
 
@@ -57,15 +57,19 @@ int main() {
 using namespace std;
 
 int main() {
-	double balance = 200,
-		yearInterest = 0.3;
-	int counter = 0;
-	cout << "Bank Balance $200" << endl
-		<< "Interest for every year" << endl;
+	double saving,
+		   balance,
+		   total,
+		yearInterest = 0.03;
+	double year = 0;
+	cout << "Interest for every year" << endl;
 	do {
-		counter++;
-		balance = balance + (balance * yearInterest);
-		cout << "Year " << counter << ": $" << balance << endl;
-	} while (counter < 10);
+		saving = saving + 200 * 12;
+		year++;
+		balance = saving + (saving * yearInterest);
+		total = total + balance;
+		cout << "Year " << year << ": $" << balance << endl;
+	} while (year < 10);
+		cout << "10 Years Total Amount is $" << total << endl;
 	return 0;
 }
