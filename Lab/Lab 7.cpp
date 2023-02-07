@@ -36,8 +36,7 @@ int main(){
 using namespace std;
 
 int main() {
-	int num,average =0;
-	int total = 0;
+	double average, num, total;
 	int counter = 0;
 	cout << "Insert number to calculate average , press 0 to start calculating" << endl;
 	do {		
@@ -50,9 +49,8 @@ int main() {
 	average = total / counter;
 	cout << "The average is " << average << endl;
 	return 0;
-	
-
 }
+
 
 //question 5
 #include <iostream>
@@ -61,13 +59,13 @@ using namespace std;
 int main() {
 	double balance = 200,
 		yearInterest = 0.3;
-	int i = 0;
+	int counter = 0;
 	cout << "Bank Balance $200" << endl
 		<< "Interest for every year" << endl;
 	do {
-		i++;
+		counter++;
 		balance = balance + (balance * yearInterest);
-		cout << "Year " << i << ": $" << balance << endl;
-	} while (i < 10);
+		cout << "Year " << counter << ": $" << balance << endl;
+	} while (counter < 10);
 	return 0;
 }
