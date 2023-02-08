@@ -3,11 +3,10 @@
 using namespace std;
 
 int main() {
-	int i,table;
-
-	for (i = 1;table < 99;i++) {
-		table = i * 3;
-		cout << table << endl;
+	int i;
+	for (i = 1;i <= 100;i++) {
+		if (i % 3 == 0)
+		cout << i << endl;
 	}
 	return 0;
 }
