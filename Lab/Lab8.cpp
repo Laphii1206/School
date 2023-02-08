@@ -16,11 +16,10 @@ int main() {
 using namespace std;
 
 int main() {
-	int i,value;
+	int i;
 	for (i = 1;i <= 20;i++) {
-		value = i % 2;
-		if (value == 0)
-		cout << i << endl;
+		if (i % 2 == 0)
+			cout << i << endl;
 	}
 	return 0;
 }
