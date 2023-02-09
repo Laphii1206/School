@@ -34,7 +34,7 @@ int main() {
 	cout << "Integer\t" << "Square\t" << "Cube\t" << endl;
 	for (min; min <= max; min++) {
 		square = min * min;
-		cube = square * min;
+		cube = min * min * min;
 		cout << min << "\t" << square << "\t" << cube << endl;
 	}
 	cout << endl;
