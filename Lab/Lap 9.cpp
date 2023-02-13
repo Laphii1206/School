@@ -54,7 +54,7 @@ int main() {
 		cout << "Year " << year << endl;
 		cout << "Month \t" << "Balance ($)" << endl;
 		for (month=4;month <= 12;month += 4) {
-			deposit = deposit + deposit * interest;
+			deposit = deposit + deposit * interest / 3;
 			cout<< month << "\t" << deposit << endl;
 		}
 		cout << endl;
