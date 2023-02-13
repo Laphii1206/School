@@ -46,12 +46,11 @@ using namespace std;
 int main() {
 	double deposit,
 		interest=0.036;
-	int month=4,
-		year=2021;
+	int month,year;
 	cout << "How much is the deposit amount? ";
 	cin >> deposit;
 	cout << endl;
-	for (year;year <= 2025;year++) {
+	for (year=2021;year <= 2025;year++) {
 		cout << "Year " << year << endl;
 		cout << "Month \t" << "Balance ($)" << endl;
 		for (month=4;month <= 12;month += 4) {
