@@ -39,6 +39,30 @@ int main() {
 	return 0;
 }
 
+//Question 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, y;
+    cout << "a." << endl;
+    for (x = 1; x <= 4; x++) {
+        for (y = 1; y <= 5; y++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    cout << endl << "b. " << endl;
+    for (x = 1;x <= 4;x++) {
+        for (y = 0;y < x;y++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
 //Question 4
 #include <iostream>
 using namespace std;
