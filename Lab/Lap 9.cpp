@@ -18,21 +18,21 @@ int main() {
 using namespace std;
 
 int main() {
-	int rounds, eachRounds,
-		counter, counterRounds;
+	int rounds, totalRoundsEach,
+		counter, counterTotal;
 	double num, total;
 	cout << "How many rounds? ";
 		cin >> rounds;
 		cout << "How many numbers to enter each round? ";
-			cin >> eachRounds;
+			cin >> totalRoundsEach;
 			cout << endl;
 			for (counter = 1;counter <= rounds;counter++) {
 				cout << "Round " << counter << endl << endl;
 				total = 0;
-				for (counterRounds = 1;counterRounds <= eachRounds;counterRounds++) {
+				for (counterTotal = 1;counterTotal <= totalRoundsEach;counterTotal++) {
 					cout << "Enter a number: ";
 					cin >> num;
-					total = total + num;
+					total+=num;
 				}
 				cout << endl << "Total is " << total << endl << endl;
 			}
