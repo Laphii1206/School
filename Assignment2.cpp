@@ -12,12 +12,11 @@ double doOpenAccount(double balance) {
 	return 0;
 }
 
-double showBalance(double balance) {
-	cout << endl << "Balance in the saving account: $" << balance << endl << endl;
-	return 0;
-}
-
 double doDeposit(double deposit, double balance) {
+	cout << endl << "How much do you like to withdraw? ";
+			cin >> withdraw;
+	cout << endl << "How much would you like to deposit? ";
+			cin >> deposit;
 	if (deposit < 0) {
 		cout << "Invalid input. Deposit must be positive." << endl
 			<< "Transaction declined." << endl << endl;
@@ -63,12 +62,8 @@ int main() {
 			<< "Selection your option (1 - 3, 0 to quit): ";
 		cin >> selection;
 		switch (selection) {
-		case 1:cout << endl << "How much would you like to deposit? ";
-			cin >> deposit;
-			doDeposit(deposit, balance); break;
-		case 2: cout << endl << "How much do you like to withdraw? ";
-			cin >> withdraw;
-			doWithdraw(withdraw, balance); break;
+		case 1:	doDeposit(deposit, balance); break;
+		case 2: doWithdraw(withdraw, balance); break;
 		case 3: cout << showBalance(balance); break;
 		case 0: cout << endl << "Thank you for using the system."; break;
 		default: cout << endl << "Invalid options" << endl; break;
