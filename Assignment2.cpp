@@ -1,6 +1,43 @@
 #include <iostream>
 using namespace std;
 
+double showBalance(double balance) {
+	cout << endl << "Balance in the saving account: $" << balance << endl << endl;
+	return 0;
+}
+
+double doDeposit(double deposit, double balance) {
+	if (deposit < 0) {
+		cout << "Invalid input. Deposit must be positive." << endl
+			<< "Transaction declined." << endl << endl;
+	}
+	else {
+		cout << "Transaction accepted." << endl
+			<< "Amount deposited: $" << deposit << endl;
+		balance = deposit + balance;
+		cout << "Balance in the Savings account: $" << balance << endl << endl;
+	}
+	return 0;
+}
+
+double doWithdraw(double withdraw, double balance) {
+	if (withdraw > balance) {
+		cout << "Insufficient money in the account to withdraw $" << withdraw << " Account balance is $" << balance << endl
+			<< "Transaction declined." << endl << endl;
+	}
+	else if (withdraw < 0) {
+		cout << "Invalid input. Withdrawal must be positive." << endl
+			<< "Transaction declined. " << endl << endl;
+	}
+	else {
+		cout << "Transaction accepted." << endl
+			<< "Amount withdrawn: $" << withdraw << endl;
+		balance = balance - withdraw;
+		cout << "Balance in the Savings account: $" << balance << endl << endl;
+	}
+	return 0;
+}
+
 int main() {
 	double balance;
 	int selection;
@@ -15,43 +52,19 @@ int main() {
 	}
 	cout << endl;
 	do {
-		cout<< "1. Deposit money" << endl
+		cout << "1. Deposit money" << endl
 			<< "2. Withdraw money" << endl
 			<< "3. Check balance" << endl
 			<< "Selection your option (1 - 3, 0 to quit): ";
 		cin >> selection;
 		switch (selection) {
-		case 1: cout << endl << "How much would you like to deposit? ";
+		case 1:cout << endl << "How much would you like to deposit? ";
 			cin >> deposit;
-			if (deposit < 0) {
-				cout << "Invalid input. Deposit must be positive." << endl
-					<< "Transaction declined." << endl << endl;
-			}
-			else {
-				cout << "Transaction accepted." << endl
-					<< "Amount deposited: $" << deposit << endl;
-				balance = deposit + balance;
-				cout << "Balance in the Savings account: $" << balance << endl << endl;
-			}
-			; break;
+			doDeposit(deposit, balance); break;
 		case 2: cout << endl << "How much do you like to withdraw? ";
 			cin >> withdraw;
-			if (withdraw > balance) {
-				cout << "Insufficient money in the account to withdraw $" << withdraw << " Account balance is $" << balance << endl
-					<< "Transaction declined." << endl << endl;
-			}
-			else if (withdraw < 0) {
-				cout << "Invalid input. Withdrawal must be positive." << endl
-					<< "Transaction declined. " << endl << endl;
-			}
-			else {
-				cout << "Transaction accepted." << endl
-					<< "Amount withdrawn: $" << withdraw << endl;
-				balance = balance - withdraw;
-				cout << "Balance in the Savings account: $" << balance << endl << endl;
-			}
-			break;
-		case 3: cout << endl << "Balance in the saving account: $" << balance << endl << endl; break;
+			doWithdraw(withdraw, balance); break;
+		case 3: cout << showBalance(balance); break;
 		case 0: cout << endl << "Thank you for using the system."; break;
 		default: cout << endl << "Invalid options" << endl; break;
 		}
