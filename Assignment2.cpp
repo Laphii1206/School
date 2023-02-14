@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+double doOpenAccount(double balance) {
+	cout << "Enter the deposit amount to open saving account (minimum is $250): ";
+	cin >> balance;
+	while (balance < 250) {
+		cout << "The minimum deposit for a saving account is $250" << endl
+			<< "Enter the deposit amount to open saving account (minimum is $250): ";
+		cin >> balance;
+	}
+	return 0;
+}
+
 double showBalance(double balance) {
 	cout << endl << "Balance in the saving account: $" << balance << endl << endl;
 	return 0;
@@ -42,14 +53,8 @@ int main() {
 	double balance;
 	int selection;
 	double deposit, withdraw;
-	cout << "Welcome to The Bank System" << endl << endl
-		<< "Enter the deposit amount to open saving account (minimum is $250): ";
-	cin >> balance;
-	while (balance < 250) {
-		cout << "The minimum deposit for a saving account is $250" << endl
-			<< "Enter the deposit amount to open saving account (minimum is $250): ";
-		cin >> balance;
-	}
+	cout << "Welcome to The Bank System" << endl << endl;
+	doOpenAccount(balance);
 	cout << endl;
 	do {
 		cout << "1. Deposit money" << endl
