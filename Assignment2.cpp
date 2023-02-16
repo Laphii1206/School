@@ -54,12 +54,12 @@ double doWithdraw() {
 			<< "Amount withdrawn: $" << withdraw << endl;
 		balance-=withdraw;
 	}
-	cout << "Balance in the Savings account: $" << balance <<endl;
+	cout << "Balance in the Savings account: $" << balance << endl;
 	return balance;
 }
 
 void showBalance() {
-	cout << "Balance in the Savings account: $" << balance <<endl ;
+	cout << "Balance in the Savings account: $" << balance << endl;
 }
 
 void menuSelection(){
