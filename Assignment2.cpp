@@ -70,7 +70,7 @@ int main() {
 		cout << endl;
 		switch (selection) {
 		case 1: balance = doDeposit(balance); break;
-		case 2: balance = doWithdraw(balance);cout ; break;
+		case 2: balance = doWithdraw(balance); break;
 		case 3: showBalance(balance); break;
 		case 0: cout << endl << "Thank you for using the system."; break;
 		default: cout << endl << "Invalid options" << endl; break;
