@@ -55,13 +55,9 @@ void showBalance(double balance) {
 	cout << "Balance in the Savings account: $" << balance <<endl ;
 }
 
-int main() {
-	double balance;
-	int selection;
-	cout << "Welcome to The Bank System" << endl << endl;
-	balance = doOpenAccount();
-	cout << endl;
-	do {
+int menuSelection(double balance){
+    int selection;
+    do {
 		cout << "1. Deposit money" << endl
 			<< "2. Withdraw money" << endl
 			<< "3. Check balance" << endl
@@ -72,10 +68,20 @@ int main() {
 		case 1: balance = doDeposit(balance); break;
 		case 2: balance = doWithdraw(balance); break;
 		case 3: showBalance(balance); break;
-		case 0: cout << endl << "Thank you for using the system."; break;
-		default: cout << endl << "Invalid options" << endl; break;
+		case 0: cout << "Thank you for using the system."; break;
+		default: cout << "Invalid options" << endl; break;
 		}
 		cout << endl;
 	} while (selection != 0);
+    return balance;
+}
+
+int main() {
+	double balance;
+	int selection;
+	cout << "Welcome to The Bank System" << endl << endl;
+	balance = doOpenAccount();
+	cout << endl;
+	balance = menuSelection(balance);
 	return 0;
 }
