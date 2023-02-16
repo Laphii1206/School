@@ -25,7 +25,7 @@ double doDeposit(double balance) {
 	cin >> deposit;
 	if (deposit < 0) {
 		cout << "Invalid input. Deposit must be positive." << endl
-			<< "Transaction declined." << endl << endl;
+			<< "Transaction declined." << endl;
 	}
 	else {
 		cout << "Transaction accepted." << endl
@@ -42,11 +42,11 @@ double doWithdraw(double balance) {
 		cin >> withdraw;
 	if (withdraw > balance) {
 		cout << "Insufficient money in the account to withdraw $" << withdraw << " Account balance is $" << balance << endl
-			<< "Transaction declined." << endl << endl;
+			<< "Transaction declined." << endl;
 	}
 	else if (withdraw < 0) {
 		cout << "Invalid input. Withdrawal must be positive." << endl
-			<< "Transaction declined. " << endl << endl;
+			<< "Transaction declined. " << endl;
 	}
 	else {
 		cout << "Transaction accepted." << endl
