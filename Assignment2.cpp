@@ -55,7 +55,7 @@ void showBalance(double balance) {
 	cout << "Balance in the Savings account: $" << balance <<endl ;
 }
 
-int menuSelection(double balance){
+void menuSelection(double balance){
     int selection;
     do {
 		cout << "1. Deposit money" << endl
@@ -73,7 +73,6 @@ int menuSelection(double balance){
 		}
 		cout << endl;
 	} while (selection != 0);
-    return balance;
 }
 
 int main() {
