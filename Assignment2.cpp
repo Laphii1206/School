@@ -82,6 +82,6 @@ int main() {
 	cout << "Welcome to The Bank System" << endl << endl;
 	balance = doOpenAccount();
 	cout << endl;
-	balance = menuSelection(balance);
+	menuSelection(balance);
 	return 0;
 }
