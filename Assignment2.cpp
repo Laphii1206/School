@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+double doOpenAccount();
+double doDeposit();
+double doWithdraw();
+void showBalance();
+void menuSelection();
+
 double doOpenAccount() {
     double balance;
     cout << "Enter the deposit amount to open saving account (minimum is $250): ";
