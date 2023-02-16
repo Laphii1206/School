@@ -83,7 +83,6 @@ void menuSelection(double balance){
 
 int main() {
 	double balance;
-	int selection;
 	cout << "Welcome to The Bank System" << endl << endl;
 	balance = doOpenAccount();
 	cout << endl;
