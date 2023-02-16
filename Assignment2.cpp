@@ -7,8 +7,9 @@ double doWithdraw();
 void showBalance();
 void menuSelection();
 
+double balance;
+
 double doOpenAccount() {
-    double balance;
     cout << "Enter the deposit amount to open saving account (minimum is $250): ";
     cin >> balance;
 	while (balance < 250) {
@@ -19,7 +20,7 @@ double doOpenAccount() {
 	return balance;
 }
 
-double doDeposit(double balance) {
+double doDeposit() {
     double deposit;
     cout << "How much would you like to deposit? ";
 	cin >> deposit;
@@ -30,13 +31,13 @@ double doDeposit(double balance) {
 	else {
 		cout << "Transaction accepted." << endl
 			<< "Amount deposited: $" << deposit << endl;
-		balance = deposit + balance;
+		balance += deposit;
 		cout << "Balance in the Savings account: $" << balance << endl;
 	}
 	return balance;
 }
 
-double doWithdraw(double balance) {
+double doWithdraw() {
     double withdraw;
     	cout << "How much do you like to withdraw? ";
 		cin >> withdraw;
@@ -51,17 +52,17 @@ double doWithdraw(double balance) {
 	else {
 		cout << "Transaction accepted." << endl
 			<< "Amount withdrawn: $" << withdraw << endl;
-		balance = balance - withdraw;
+		balance-=withdraw;
 	}
 	cout << "Balance in the Savings account: $" << balance <<endl;
 	return balance;
 }
 
-void showBalance(double balance) {
+void showBalance() {
 	cout << "Balance in the Savings account: $" << balance <<endl ;
 }
 
-void menuSelection(double balance){
+void menuSelection(){
     int selection;
     do {
 		cout << "1. Deposit money" << endl
@@ -71,9 +72,9 @@ void menuSelection(double balance){
 		cin >> selection;
 		cout << endl;
 		switch (selection) {
-		case 1: balance = doDeposit(balance); break;
-		case 2: balance = doWithdraw(balance); break;
-		case 3: showBalance(balance); break;
+		case 1: balance = doDeposit(); break;
+		case 2: balance = doWithdraw(); break;
+		case 3: showBalance(); break;
 		case 0: cout << "Thank you for using the system."; break;
 		default: cout << "Invalid options" << endl; break;
 		}
@@ -84,8 +85,8 @@ void menuSelection(double balance){
 int main() {
 	double balance;
 	cout << "Welcome to The Bank System" << endl << endl;
-	balance = doOpenAccount();
+	doOpenAccount();
 	cout << endl;
-	menuSelection(balance);
+	menuSelection();
 	return 0;
 }
