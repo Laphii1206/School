@@ -79,13 +79,14 @@ double doWithdraw() {
 				confirmation = toupper(confirmation);
 			}
 		} while (confirmation != 'Y');
-		cout << endl << "Transaction accepted." << endl
+		if (confirmation == 'Y'){
+            cout << endl << "Transaction accepted." << endl
 			<< "Amount withdrawn: $" << withdraw << endl;
 		balance -= withdraw;
 		cout << "Balance in the Savings account: $" << balance <<endl;
 		cout << endl << "Would you like to make another withdraw? (Y/N): ";
 		cin >> confirmation2;
-		confirmation2 = toupper(confirmation2);
+		confirmation2 = toupper(confirmation2);}
 	} while (confirmation2 == 'Y');
 	return balance;
 }
