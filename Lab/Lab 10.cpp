@@ -68,6 +68,7 @@ using namespace std;
 int x, y,sum =0;
 // sum has to initialize to 0
 
+
 double doSum() {
     if (x < y)
 	for (x; x <= y;x++)
