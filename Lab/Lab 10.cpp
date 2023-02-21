@@ -65,7 +65,8 @@ int main(){
 #include <iostream>
 using namespace std;
 
-int x, y,sum;
+int x, y,sum =0;
+// sum has to initialize to 0
 
 double doSum() {
     if (x < y)
