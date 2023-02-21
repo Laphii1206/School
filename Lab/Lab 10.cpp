@@ -127,10 +127,10 @@ using namespace std;
 
 int x, y;
 
-void doFactor() {
+bool doFactor() {
 	if (y % x == 0)
-		cout << "y is the factor of x";
-	else cout << "y is not the factor of x";
+		return true;
+	return false;
 }
 
 int main() {
