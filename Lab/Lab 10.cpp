@@ -68,8 +68,12 @@ using namespace std;
 int x, y,sum;
 
 double doSum() {
+    if (x < y)
 	for (x; x <= y;x++)
 		sum = sum + x;
+		else
+		for (y; y <= x;y++)
+		sum = sum + y;	
 	return sum;
 }
 
@@ -82,7 +86,10 @@ int main() {
 		cin >> x >> y;
 	}
 		sum = doSum();
+		if (y < x)
 		cout << "The sum of all the integers from x to y is " << sum;
+		else 
+		cout <<  "The sum of all the integers from y to x is " << sum;
 		return 0;
 }
 
