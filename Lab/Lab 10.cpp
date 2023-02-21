@@ -146,7 +146,7 @@ using namespace std;
 
 int score;
 
-void grading() {
+char grading() {
 	cout << endl;
 	if (score >= 80 && score <= 100) cout << "The grade for " << score << "% is A";
 	if (score >= 66 && score <=79) cout << "The grade for " << score << "% is B";
