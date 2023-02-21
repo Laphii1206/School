@@ -114,6 +114,13 @@ int main() {
 		return 0;
 }
 
+//Correct Answer for Question 5
+bool isPositive(int num){
+	if (num >0)
+		return true;
+	return false;
+}
+
 //Question 6
 #include <iostream>
 using namespace std;
