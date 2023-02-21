@@ -99,9 +99,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-int i;
-
-void isPositive() {
+void isPositive(int i) {
 	if (i < 0)
 		cout << "the integer is negative";
 	else 
@@ -109,9 +107,10 @@ void isPositive() {
 }
 
 int main() {
+	int i;
 	cout << "Enter a number: ";
 	cin >> i;
-	isPositive();
+	isPositive(i);
 		return 0;
 }
 
