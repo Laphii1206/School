@@ -144,9 +144,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-int score;
-
-char grading() {
+void grading(int score) {
 	cout << endl;
 	if (score >= 80 && score <= 100) cout << "The grade for " << score << "% is A";
 	if (score >= 66 && score <=79) cout << "The grade for " << score << "% is B";
@@ -168,9 +166,9 @@ using namespace std;
 
 double m,inch;
 
-void convert() {
+double convert(double meter) {
 	inch = m / 39.37;
-		cout << m << "m convert to inches is " << inch;
+		return inch;
 }
 
 
@@ -182,20 +180,22 @@ int main() {
 		return 0;
 }
 
+//Answer
+double meterToInch(double meter){
+return meter*39.37	
+}
+
 //Question 9
 #include <iostream>
 using namespace std;
 
-double cm,inch;
-
-void convert() {
+double convert(double cm) {
+	double inch=0;
 	inch = cm / 2.54;
-		cout << cm << " convert to inches is " << inch;
+		return inch;
 }
 
-int main() {
-	cout << "Enter a inches: ";
-		cin >> cm;
-		convert();
-		return 0;
+//Answer
+double convert(double cm){
+return cm/2.54	
 }
