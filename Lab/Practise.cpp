@@ -26,7 +26,7 @@ int main()
     double ot,hour;
     cout  << "1. Part-timer" << endl
     << "2. Employee" << endl
-    <<  "Choose a Worker Type (1/2): ";
+    <<  "Select a Worker Type (1/2): ";
     cin >> selection;
     cout << "number of hours for ot: ";
     cin >> hour;
