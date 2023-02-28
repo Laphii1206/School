@@ -40,11 +40,11 @@ int main()
 
 //3
 if (selection == 1)
-sum = x+y
+sum = x+y;
 else if (selection == 2)
-sum = x-y
+sum = x-y;
 else 
-sum = x*y
+sum = x*y;
 
 //4
 #include <iostream>
