@@ -23,18 +23,21 @@ using namespace std;
 int main()
 {
     int selection;
-    double ot,hour;
+    double payout,ot,hour;
+    do {
     cout  << "1. Part-timer" << endl
     << "2. Employee" << endl
     <<  "Select a Worker Type (1/2): ";
     cin >> selection;
+        switch (selection){
+        case 1: ot = 25; break;
+        case 2: ot = 20; break;
+        default: cout << "invalid options" << endl <<endl; }
+    } while (selection != 1 && selection !=2);
     cout << "number of hours for ot: ";
     cin >> hour;
-    switch (selection){
-        case 1: ot = hour * 25; break;
-        case 2: ot = hour * 20; break;
-    }
-    cout << "OT Payment is $" << ot;
+    payout = hour * ot;
+    cout << "OT Payment is $" << payout;
     return 0;
 }
 
