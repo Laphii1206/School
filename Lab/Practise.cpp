@@ -14,3 +14,114 @@ int main()
     
     return 0;
 }
+
+//2
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int selection;
+    double ot,hour;
+    cout  << "1. Part-timer" << endl
+    << "2. Employee" << endl
+    <<  "Choose a Worker Type (1/2): ";
+    cin >> selection;
+    cout << "number of hours for ot: ";
+    cin >> hour;
+    switch (selection){
+        case 1: ot = hour * 25; break;
+        case 2: ot = hour * 20; break;
+    }
+    cout << "OT Payment is $" << ot;
+    return 0;
+}
+
+//3
+if (selection == 1)
+sum = x+y
+else if (selection == 2)
+sum = x-y
+else 
+sum = x*y
+
+//4
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int i,num;
+for (i=1;num <99;i++){
+    num = i * 3;
+    cout << num << " ";
+    
+}
+return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int i,num;
+for (i=2;i<=100;i++){
+    if (i % 2 == 0)
+    cout << i << " ";
+}
+return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int i,num=1;
+cout << num << " ";
+while (num <127){
+    num = num * 2;
+    cout << num << " ";
+}
+return 0;
+}
+
+//5
+#include <iostream>
+using namespace std;
+
+double perimeter,surface,volume;
+
+double doPerimeter(double length,double width,double height){
+    perimeter = ((length+width+height)*4);
+    return perimeter;
+}
+
+double doSurface(double length,double width,double height){
+    surface = (2*(length*width+width*height+height*length));
+    return surface;
+}
+
+double doVolume(double length,double width,double height){
+    volume = (length * width*height);
+    return volume;
+}
+
+int main()
+{
+double length,width,height;
+cout << "Enter length,width,height seperate with space: ";
+cin >> length >> width >> height;
+perimeter = doPerimeter(length,width,height);
+surface = doSurface(length,width,height);
+volume = doVolume(length,width,height);
+cout << "The perimeter of rectangular prism is " << perimeter << endl;
+cout << "The surface of rectangular prism is " << surface << endl;
+cout << "The volume of rectangular prism is " << volume << endl;
+return 0;
+}
