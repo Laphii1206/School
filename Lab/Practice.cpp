@@ -7,9 +7,9 @@ int main()
     double balance,interest,total;
     cout << "Enter Balance: ";
     cin >> balance;
-    cout << "Enter interest: ";
+    cout << "Enter interest rate: ";
     cin >> interest;
-    total = balance + balance * (interest/100);
+    total = balance + balance * interest / 100;
     cout << "Balace at the end of the year with interest is " << total;
     
     return 0;
