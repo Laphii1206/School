@@ -43,7 +43,7 @@ if (selection == 1)
 sum = x+y;
 else if (selection == 2)
 sum = x-y;
-else 
+else if (selection ==3)
 sum = x*y;
 
 //4
