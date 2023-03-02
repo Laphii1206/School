@@ -98,33 +98,33 @@ return 0;
 #include <iostream>
 using namespace std;
 
-double perimeter,surface,volume;
-
 double doPerimeter(double length,double width,double height){
-    perimeter = ((length+width+height)*4);
-    return perimeter;
+    return (( length + width + height ) * 4 );
 }
 
 double doSurface(double length,double width,double height){
-    surface = (2*(length*width+width*height+height*length));
-    return surface;
+    return ( 2 * ( length * width + width * height + height * length ));
 }
 
 double doVolume(double length,double width,double height){
-    volume = (length * width*height);
-    return volume;
+    return (length * width * height);
 }
 
 int main()
 {
+
 double length,width,height;
+
 cout << "Enter length,width,height seperate with space: ";
 cin >> length >> width >> height;
-perimeter = doPerimeter(length,width,height);
-surface = doSurface(length,width,height);
-volume = doVolume(length,width,height);
+double perimeter = doPerimeter(length,width,height);
+double surface = doSurface(length,width,height);
+double volume = doVolume(length,width,height);
 cout << "The perimeter of rectangular prism is " << perimeter << endl;
 cout << "The surface of rectangular prism is " << surface << endl;
 cout << "The volume of rectangular prism is " << volume << endl;
 return 0;
 }
+
+
+
